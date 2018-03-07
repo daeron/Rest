@@ -6,14 +6,15 @@
   
     <name>AppEstudante Serenity BDD</name>
 
-    <properties>
+  <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>1.9.2</serenity.version>
         <serenity.maven.version>1.9.2</serenity.maven.version>
-        <serenity.cucumber.version>1.9.3</serenity.cucumber.version> <!-- https://bintray.com/serenity/maven/serenity-cucumber/ -->
-	</properties>
+        <serenity.cucumber.version>1.9.3</serenity.cucumber.version>
+         <encoding>UTF-8</encoding>
+    </properties>
 
-<!-- Define the Bintray repos for convenience -->
+  <!-- Define the Bintray repos for convenience -->
 	<repositories>
 		<repository>
 			<id>serenity</id>
@@ -21,6 +22,7 @@
 			<url>http://dl.bintray.com/serenity/maven</url>
 		</repository>
 	</repositories>
+	
 	<pluginRepositories>
 		<pluginRepository>
 			<id>serenity</id>
@@ -53,12 +55,12 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
-			<version>1.6.1</version>
+			<version>1.7.7</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
 			<artifactId>groovy-all</artifactId>
-			<version>1.8.6</version>
+			<version>2.4.5</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -79,46 +81,52 @@
 		<dependency>
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
-			<version>1.7.0</version>
+			<version>3.6.2</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>3.0.7</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.10</version>
+			<scope>test</scope>
+		</dependency>
+		
+		 <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
 	</dependencies>
 	<build>
 		<plugins>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>1.4</version>
-				<executions>
-					<execution>
-						<id>enforce</id>
-						<configuration>
-							<rules>
-								<requireUpperBoundDeps />
-							</rules>
-						</configuration>
-						<goals>
-							<goal>enforce</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+		
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.18</version>
+				<version>2.20</version>
 				<configuration>
 					<skip>true</skip>
+					<printSummary>true</printSummary>
 				</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.18</version>
+				<version>2.20</version>
 				<configuration>
 					<includes>
-						
-						<include>**/studentapp/*.java</include>
+						<include>**/appestudante/*.java</include>
+						<include>**/*Test.java</include>
+                        <include>**/Test*.java</include>
+                        <include>**/*TestSuite.java</include>
+						<include>**/When*.java</include> 
 					</includes>
 					<forkCount>4</forkCount>
 					<reuseForks>true</reuseForks>
@@ -138,7 +146,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.2</version>
+				<version>3.7.0</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="25157" started-at="2018-03-07T05:07:34Z" finished-at="2018-03-07T05:07:59Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="25157" started-at="2018-03-07T05:07:34Z" finished-at="2018-03-07T05:07:59Z">
+      <class name="com.appestudante.junit.estudantesinfo.primeiroTest">
+        <test-method status="PASS" signature="thisIsaFailingTest()[pri:0, instance:thisIsaFailingTest(com.appestudante.junit.estudantesinfo.primeiroTest)]" name="thisIsaFailingTest" duration-ms="13076" started-at="2018-03-07T02:07:36Z" finished-at="2018-03-07T02:07:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thisIsaFailingTest -->
+        <test-method status="SKIP" signature="thisIsAPendingTest()[pri:0, instance:thisIsAPendingTest(com.appestudante.junit.estudantesinfo.primeiroTest)]" name="thisIsAPendingTest" duration-ms="0" started-at="2018-03-07T02:07:51Z" finished-at="2018-03-07T02:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thisIsAPendingTest -->
+        <test-method status="SKIP" signature="thisIsASkipTest()[pri:0, instance:thisIsASkipTest(com.appestudante.junit.estudantesinfo.primeiroTest)]" name="thisIsASkipTest" duration-ms="0" started-at="2018-03-07T02:07:51Z" finished-at="2018-03-07T02:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thisIsASkipTest -->
+        <test-method status="PASS" signature="getTodosEstudantes()[pri:0, instance:getTodosEstudantes(com.appestudante.junit.estudantesinfo.primeiroTest)]" name="getTodosEstudantes" duration-ms="833" started-at="2018-03-07T02:07:51Z" finished-at="2018-03-07T02:07:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTodosEstudantes -->
+      </class> <!-- com.appestudante.junit.estudantesinfo.primeiroTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
