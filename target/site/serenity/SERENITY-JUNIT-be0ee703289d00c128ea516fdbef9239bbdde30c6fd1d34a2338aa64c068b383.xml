@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="com.appestudante.junit.estudantesinfo.EstudanteCRUDTest" skipped="0" tests="1" time="16.81" timestamp="2018-03-67 02:01:32"><testcase classname="com.appestudante.junit.estudantesinfo.EstudanteCRUDTest" name="Esse teste criara um novo estudante--POST"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;405&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;405&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;405&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:654)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:124)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:132)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)&#13;
+com.appestudante.junit.estudantesinfo.EstudanteCRUDTest.createEstudante(EstudanteCRUDTest.java:45)&#13;
+</system-err></testcase></testsuite>

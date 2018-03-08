@@ -1,2 +1,4 @@
+com\appestudante\junit\estudantesinfo\EstudanteCRUDTest.class
 com\appestudante\junit\estudantesinfo\primeiroTest.class
 com\appestudante\junit\estudantesIdinfo\SerenityIdInfo.class
+com\appestudante\testbase\TestBase.class

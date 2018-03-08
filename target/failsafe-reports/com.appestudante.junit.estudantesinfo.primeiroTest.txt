@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.appestudante.junit.estudantesinfo.primeiroTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 26.476 s - in com.appestudante.junit.estudantesinfo.primeiroTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 26.43 s - in com.appestudante.junit.estudantesinfo.primeiroTest
